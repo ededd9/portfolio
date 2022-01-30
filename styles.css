@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+body {
+  background-color: #379fe4;
+}
+.overlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+.lock_container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 175px;
+  width: 175px;
+  border-radius: 15%;
+  outline-color: #288fd3;
+  outline-style: solid;
+}
+
+.c {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  border-radius: 100%;
+  outline-color: #288fd3;
+  outline-style: solid;
+  opacity: 0.8;
+}
+.c:hover {
+  cursor: pointer;
+}
+
+.c1 {
+  top: 15px;
+  left: 120px;
+  animation: none;
+}
+
+.animation {
+  animation: scaleIn 3s 1 cubic-bezier(0.36, 0.11, 0.89, 0.32);
+}
+.animation_paused {
+  animation-play-state: paused;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  to {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+}
+
+.c2 {
+  top: 35px;
+  left: 120px;
+}
+.c3 {
+  top: 55px;
+  left: 120px;
+}
+.c4 {
+  top: -90px;
+  left: 70px;
+}
+.c5 {
+  top: -70px;
+  left: 70px;
+}
+.c6 {
+  top: -50px;
+  left: 70px;
+}
+.c7 {
+  top: -195px;
+  left: 20px;
+}
+.c8 {
+  top: -175px;
+  left: 20px;
+}
+.c9 {
+  top: -155px;
+  left: 20px;
+}
+.pattern_login_button {
+  position: absolute;
+  left: 50%;
+  top: 30.5%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+  outline: white;
+  border-radius: 25px;
+}
+.pattern_login_button:hover {
+  background-color: white;
+  color: #288fd3;
+  cursor: pointer;
+}
